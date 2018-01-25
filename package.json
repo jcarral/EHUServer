@@ -1,0 +1,11 @@
+{
+  "name": "ehucal-server",
+  "version": "1.0.0",
+  "description": "Firebase backend for ehu-cal APP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joseba Carral <jcarraldc@gmail.com>",
+  "license": "MIT"
+}
