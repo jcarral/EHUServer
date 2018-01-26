@@ -10,7 +10,10 @@
     "logs": "firebase functions:log"
   },
   "dependencies": {
-    "ehu-scraping": "^1.1.1",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.4",
+    "ehu-scraping": "^1.1.2",
+    "express": "^4.16.2",
     "firebase-admin": "~5.8.1",
     "firebase-functions": "^0.8.1"
   },
