@@ -1,3 +1,5 @@
 'use strict';
-
-module.exports = require('./ehu/ehu-data');
+const loader = require('./ehu/loader');
+module.exports = {
+	loader
+};

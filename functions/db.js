@@ -17,6 +17,7 @@ class DB{
 			}
 		}
 		this._db = admin.database();
+		this._firestore = admin.firestore();
 	}
 
 	get db(){
@@ -27,6 +28,13 @@ class DB{
 		return this._db.ref(path);
 	}
 
+	collection(name){
+		return this._firestore.collection(name);
+	}
+
+	batch(){
+		return this._firestore.batch();
+	}
 }
 
 module.exports = DB;
