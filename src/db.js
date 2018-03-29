@@ -8,10 +8,10 @@ class DB{
 	constructor(){
 		if(admin.apps.length === 0){
 			if(process.env.NODE_ENV === 'development')
-				admin.initializeApp({
-					credential: admin.credential.cert(firebase.credentials),
-					databaseURL: firebase.database,
-				});
+			admin.initializeApp({
+				credential: admin.credential.cert(firebase.credentials),
+				databaseURL: firebase.database,
+			});
 			else{
 				admin.initializeApp(functions.config().firebase);
 			}
