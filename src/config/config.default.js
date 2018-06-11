@@ -1,8 +1,6 @@
-'use strict';
-
 module.exports = {
-	firebase : {
-		credentials : {},
-		database : ''
-	}
+  firebase: {
+    credentials: {},
+    database: '',
+  },
 };

@@ -1,3 +1,16 @@
 {
-	
+	"env": {
+		"browser": true,
+		"node": true
+	},
+	"extends": "airbnb",
+	"rules": {
+    "no-unused-vars": 0,
+    "no-console": 0,
+    "no-restricted-syntax": 0,
+    "no-await-in-loop": 0,
+    "prefer-destructuring": 0,
+    "quote-props": 0,
+    "import/no-dynamic-require": 0
+	}
 }
