@@ -1,20 +1,28 @@
 {
-	"name": "ehucal-server",
-	"version": "1.0.0",
-	"description": "Firebase backend for ehu-cal APP",
-	"main": "index.js",
-	"scripts": {
-		"build": "rm -rf functions && babel src --out-dir functions --copy-files --ignore src/node_modules && cp src/.eslintrc.json functions/",
-		"functions": "firebase deploy --only functions"
-	},
-	"author": "Joseba Carral <jcarraldc@gmail.com>",
-	"license": "MIT",
-	"devDependencies": {
-		"@babel/cli": "^7.0.0-beta.42",
-		"@babel/core": "^7.0.0-beta.42",
-		"@babel/preset-env": "^7.0.0-beta.42",
-		"eslint-config-airbnb": "^16.1.0",
-		"eslint-plugin-jsx-a11y": "^6.0.3",
-		"prettier": "^1.11.1"
-	}
+  "name": "ehucal-server",
+  "version": "1.0.0",
+  "description": "Firebase backend for ehu-cal APP",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf functions && babel src --presets es2017 --out-dir functions --copy-files --ignore src/node_modules && cp src/.eslintrc.json functions/",
+    "functions": "firebase deploy --only functions"
+  },
+  "author": "Joseba Carral <jcarraldc@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.32",
+    "@babel/core": "^7.0.0-beta.32",
+    "@babel/preset-env": "^7.0.0-beta.32",
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2017": "^6.24.1",
+    "eslint": "^4.19.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "prettier": "^1.11.1"
+  },
+  "dependencies": {
+    "babel-preset-es2015": "^6.24.1"
+  }
 }
